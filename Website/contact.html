@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Contact Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script src="js/scripts.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html" class="logo">Sosa</a>
+
+      <nav class="navbar">
+        <a href="profile.html">About Me</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <div class="alert-success">
+      <span>Message Sent! Thank you for contacting me.</span>
+    </div>
+
+    <div class="alert-error">
+      <span>Something went wrong! Please try again.</span>
+    </div>
+
+    <div class="contact-whole">
+      <div class="contact-section">
+        <div class="contact-info">
+          <div><i class="bx bxs-map"></i>Address, City</div>
+          <div><i class="bx bxs-envelope"></i>Contact@email</div>
+          <div><i class="bx bx-phone"></i>+44 0000 000 000</div>
+          <div><i class="bx bxs-watch"></i>Mon - Fri 8:00 AM to 5:00 PM</div>
+        </div>
+
+        <div class="contact-form">
+          <h2>Contact Me</h2>
+          <form class="contact" method="post">
+            <input
+              type="text"
+              name="name"
+              class="text-box"
+              placeholder="Your Name"
+            />
+            <input
+              type="email"
+              name="email"
+              class="text-box"
+              placeholder="Your Email"
+            />
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+            ></textarea>
+            <input type="button" name="submit" class="send-btn" value="Send" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="home-sci">
+        <a href="#"><i class="bx bxl-github"></i></a>
+        <a href="#"><i class="bx bxl-linkedin"></i></a>
+        <a href="#"><i class="bx bxl-spotify"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>
