@@ -440,6 +440,59 @@ footer {
   background: #7777f7;
 }
 
+.github {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.profile-card {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-right: 350px; /* adjust as needed */
+}
+
+.profile-picture {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-details {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profile-bio {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.profile-link {
+  font-size: 10px;
+  color: #007bff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.profile-link:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 950px) {
   .contact-section {
     flex-direction: column;
