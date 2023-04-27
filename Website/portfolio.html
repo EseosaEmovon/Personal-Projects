@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
-
     <link
       rel="stylesheet"
       type="text/css"
@@ -31,18 +29,33 @@
     </header>
 
     <main class="whole">
-      <div class="slide-container swiper">
-        <div class="slide-content">
-          <div class="card-wrapper swiper-wrapper">
-            <div class="card swiper-slide">
+      <section class="filters container">
+        <!-- Filter Tabs -->
+        <ul class="filter-content">
+          <button
+            class="filter-button filter-tab-active"
+            data-target="#projects"
+          >
+            Projects
+          </button>
+
+          <button class="filter-button" data-target="#skills">Skills</button>
+        </ul>
+
+        <div class="filter-sections">
+          <!-- Projects -->
+          <div
+            class="projects-content grid filters-active"
+            data-content
+            id="projects"
+          >
+            <article class="projects-card">
               <div class="image-content">
                 <span class="overlay"></span>
-
                 <div class="card-image">
                   <img src="images/web.jpg" alt="" class="card-img" />
                 </div>
               </div>
-
               <div class="card-content">
                 <h2 class="name">Personal Website</h2>
                 <p class="description">
@@ -51,17 +64,161 @@
                   dolores et quas molestias excepturi sint occaecati cupiditate
                   non provident
                 </p>
-
                 <button class="portfolio-btn">View Page</button>
+              </div>
+            </article>
+            <article class="projects-card">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="images/web.jpg" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Personal Website</h2>
+                <p class="description">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores et quas molestias excepturi sint occaecati cupiditate
+                  non provident
+                </p>
+                <button class="portfolio-btn">View Page</button>
+              </div>
+            </article>
+            <article class="projects-card">
+              <div class="image-content">
+                <span class="overlay"></span>
+                <div class="card-image">
+                  <img src="images/web.jpg" alt="" class="card-img" />
+                </div>
+              </div>
+              <div class="card-content">
+                <h2 class="name">Personal Website</h2>
+                <p class="description">
+                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                  blanditiis praesentium voluptatum deleniti atque corrupti quos
+                  dolores et quas molestias excepturi sint occaecati cupiditate
+                  non provident
+                </p>
+                <button class="portfolio-btn">View Page</button>
+              </div>
+            </article>
+          </div>
+
+          <!-- Skills -->
+          <div class="skills-content grid" data-content id="skills">
+            <div class="skills-area">
+              <h3 class="skills-title">Frontend Developer</h3>
+
+              <div class="skills-box">
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">HTML</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">CSS</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">JavaScript</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">React</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">BootStrap</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">Git</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-area">
+              <h3 class="skills-title">Backend Developer</h3>
+
+              <div class="skills-box">
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">PHP</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">MySQL</h3>
+                      <span class="skills-level">Intermediate</span>
+                    </div>
+                  </div>
+
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">Python</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="skills-group">
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">NodeJS</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">MongoDB</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+                  <div class="skills-data">
+                    <i class="bx bx-check-circle"></i>
+                    <div>
+                      <h3 class="skills-name">MongoDB</h3>
+                      <span class="skills-level">Basic</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
+      </section>
     </main>
 
     <footer>
@@ -72,6 +229,5 @@
       </div>
     </footer>
   </body>
-  <script src="js/swiper-bundle.min.js"></script>
-  <script src="js/scripts.js"></script>
+  <script src="js/tabs.js"></script>
 </html>
