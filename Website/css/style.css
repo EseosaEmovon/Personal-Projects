@@ -41,7 +41,7 @@ footer {
   font-weight: 600;
 }
 
-.navbar a {
+nav a {
   font-size: 16px;
   color: #ededed;
   text-decoration: none;
@@ -50,7 +50,7 @@ footer {
   transition: 0.3s;
 }
 
-.navbar a:hover {
+nav a:hover {
   color: #00abf0;
 }
 
@@ -301,6 +301,11 @@ footer {
   background: #0582e3;
 }
 
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
 .alert-success {
   display: none;
   z-index: 1;
@@ -510,5 +515,16 @@ footer {
 
   .contact-form .text-box {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #menuToggler {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
   }
 }

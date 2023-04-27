@@ -24,3 +24,7 @@ fetch(`https://api.github.com/users/${username}`, {
     const githubSection = document.querySelector("section.github");
     githubSection.appendChild(profile);
   });
+
+menuToggler.addEventListener("click", (ev) => {
+  menu.classList.toggle("open");
+});
